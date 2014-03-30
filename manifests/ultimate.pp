@@ -74,6 +74,11 @@ class idea::ultimate(
     'UNSET' => $::idea::params::target,
     default => $target,
   }
+  
+  $timeout_real = $timeout ? {
+    'UNSET' => $::idea::params::timeout,
+    default => $timeout,
+  }
 
   $build_real = $build ? {
     'UNSET' => $::idea::params::build,
@@ -87,5 +92,6 @@ class idea::ultimate(
     url     => $url_real,
     build   => $ultimate_build,
     target  => $target_real,
+    timeout => $timeout_real,
   }
 }
