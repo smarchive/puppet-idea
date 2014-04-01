@@ -74,7 +74,7 @@ class idea::ultimate(
     'UNSET' => $::idea::params::target,
     default => $target,
   }
-  
+
   $timeout_real = $timeout ? {
     'UNSET' => $::idea::params::timeout,
     default => $timeout,
