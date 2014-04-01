@@ -51,6 +51,7 @@ class idea::ultimate(
   $url      = 'UNSET',
   $build    = 'UNSET',
   $target   = 'UNSET',
+  $timeout  = 'UNSET',
 ) {
 
   include idea::params
