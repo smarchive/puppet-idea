@@ -50,7 +50,7 @@ class idea::params {
   }
 
   $timeout = $::idea_timeout ? {
-    undef   => 300,
+    undef   => 600,
     default => $::idea_timeout,
   }
 }
