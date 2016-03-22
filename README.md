@@ -1,7 +1,7 @@
 IntelliJ IDEA Puppet Module
 ===========================
 
-[![Build Status](https://secure.travis-ci.org/smarchive/puppet-idea.png)](http://travis-ci.org/smarchive/puppet-idea)
+[![Build Status](https://secure.travis-ci.org/l0b0/puppet-idea.png)](https://travis-ci.org/l0b0/puppet-idea)
 
 Overview
 --------
