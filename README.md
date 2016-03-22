@@ -22,7 +22,7 @@ Example:
 License
 -------
 
-Copyright (c) 2012 - 2014 Gini GmbH
+Copyright (c) 2012 - 2014 Gini GmbH, 2015 - 2016 Victor Engmark
 
 This script is licensed under the Apache License, Version 2.0.
 
@@ -32,4 +32,4 @@ See http://www.apache.org/licenses/LICENSE-2.0.html for the full license text.
 Support
 -------
 
-Please log tickets and issues at our [project site](https://github.com/gini/puppet-idea/issues).
+Please log tickets and issues at the [project site](https://github.com/l0b0/puppet-idea/issues).
