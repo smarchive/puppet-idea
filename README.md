@@ -19,6 +19,13 @@ Example:
     }
 
 
+Test
+----
+
+    rvm use 2.3.0 --install # Or whatever version of Ruby
+    bundle install
+    bundle exec rake
+
 License
 -------
 
