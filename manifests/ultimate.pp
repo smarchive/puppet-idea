@@ -49,43 +49,43 @@
 # Copyright 2012, 2013 smarchive GmbH
 #
 class idea::ultimate(
-  $version  = 'UNSET',
-  $base_url = 'UNSET',
-  $url      = 'UNSET',
-  $build    = 'UNSET',
-  $target   = 'UNSET',
-  $timeout  = 'UNSET',
+  $version  = undef,
+  $base_url = undef,
+  $url      = undef,
+  $build    = undef,
+  $target   = undef,
+  $timeout  = undef,
 ) {
 
   include idea::params
 
   $version_real = $version ? {
-    'UNSET' => $::idea::params::version,
+    undef => $::idea::params::version,
     default => $version,
   }
 
   $base_url_real = $base_url ? {
-    'UNSET' => $::idea::params::base_url,
+    undef => $::idea::params::base_url,
     default => $base_url,
   }
 
   $url_real = $url ? {
-    'UNSET' => "${base_url_real}/ideaIU-${version_real}.tar.gz",
+    undef => "${base_url_real}/ideaIU-${version_real}.tar.gz",
     default => $url,
   }
 
   $target_real = $target ? {
-    'UNSET' => $::idea::params::target,
+    undef => $::idea::params::target,
     default => $target,
   }
 
   $timeout_real = $timeout ? {
-    'UNSET' => $::idea::params::timeout,
+    undef => $::idea::params::timeout,
     default => $timeout,
   }
 
   $build_real = $build ? {
-    'UNSET' => $::idea::params::build,
+    undef => $::idea::params::build,
     default => $build,
   }
 

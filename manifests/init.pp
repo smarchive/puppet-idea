@@ -45,11 +45,11 @@
 # Copyright 2012, 2013 smarchive GmbH
 #
 class idea(
-  $version  = 'UNSET',
-  $url      = 'UNSET',
-  $build    = 'UNSET',
-  $target   = 'UNSET',
-  $timeout  = 'UNSET',
+  $version  = undef,
+  $url      = undef,
+  $build    = undef,
+  $target   = undef,
+  $timeout  = undef,
 ) {
   class { 'idea::community':
     version => $version,
