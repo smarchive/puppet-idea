@@ -1,6 +1,5 @@
 language: ruby
 rvm:
-  - 1.9.2
   - 1.9.3
 before_script:
   - 'git clone git://github.com/gini/puppet-archive.git spec/fixtures/modules/archive'
