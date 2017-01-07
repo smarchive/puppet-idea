@@ -42,7 +42,7 @@
 #
 # Copyright 2012, 2013 smarchive GmbH
 #
-class idea::ultimate(
+class idea::ultimate (
   $version  = undef,
   $base_url = undef,
   $url      = undef,
@@ -53,27 +53,27 @@ class idea::ultimate(
   include idea::params
 
   $version_real = $version ? {
-    undef => $::idea::params::version,
+    undef   => $::idea::params::version,
     default => $version,
   }
 
   $base_url_real = $base_url ? {
-    undef => $::idea::params::base_url,
+    undef   => $::idea::params::base_url,
     default => $base_url,
   }
 
   $url_real = $url ? {
-    undef => "${base_url_real}/ideaIU-${version_real}.tar.gz",
+    undef   => "${base_url_real}/ideaIU-${version_real}.tar.gz",
     default => $url,
   }
 
   $target_real = $target ? {
-    undef => $::idea::params::target,
+    undef   => $::idea::params::target,
     default => $target,
   }
 
   $timeout_real = $timeout ? {
-    undef => $::idea::params::timeout,
+    undef   => $::idea::params::timeout,
     default => $timeout,
   }
 

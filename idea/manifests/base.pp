@@ -32,7 +32,7 @@
 #
 # Copyright 2012, 2013 smarchive GmbH
 #
-class idea::base(
+class idea::base (
   $version,
   $url,
   $target,

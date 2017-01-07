@@ -38,11 +38,11 @@
 #
 # Copyright 2012, 2013 smarchive GmbH
 #
-class idea(
-  $version  = undef,
-  $url      = undef,
-  $target   = undef,
-  $timeout  = undef,
+class idea (
+  $version = undef,
+  $url     = undef,
+  $target  = undef,
+  $timeout = undef,
 ) {
   class { 'idea::community':
     version => $version,
