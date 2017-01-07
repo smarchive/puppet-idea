@@ -16,11 +16,6 @@
 #   Specify the absolute URL of the IntelliJ IDEA tarball. This overrides any
 #   version which has been set before.
 #
-# [*build*]
-#   Specify the build number of IntelliJ IDEA inside the tarball. You have to
-#   specify this for every new version of IntelliJ IDEA since it doesn't match
-#   the version number or anything else which could be automatically set.
-#
 # [*target*]
 #   Specify the location of the symlink to the IntelliJ IDEA installation on
 #   the local filesystem.
@@ -37,7 +32,6 @@
 #
 #  class { 'idea::community':
 #    version => '12.1.3',
-#    build   => '129.451',
 #  }
 #
 # === Authors
@@ -52,7 +46,6 @@ class idea::community(
   $version  = undef,
   $base_url = undef,
   $url      = undef,
-  $build    = undef,
   $target   = undef,
   $timeout  = undef,
 ) {
@@ -84,17 +77,9 @@ class idea::community(
     default => $timeout,
   }
 
-  $build_real = $build ? {
-    undef => $::idea::params::build,
-    default => $build,
-  }
-
-  $community_build = "idea-IC-${build_real}"
-
   class { 'idea::base':
     version => $version_real,
     url     => $url_real,
-    build   => $community_build,
     target  => $target_real,
     timeout => $timeout_real,
   }
