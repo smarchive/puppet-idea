@@ -1,6 +1,6 @@
 name         'gini-idea'
-version      '0.3.0'
-author       'Jochen Schalanda'
+version      '0.4.0'
+author       'Jochen Schalanda, Victor Engmark'
 license      'Apache 2.0'
 project_page 'https://github.com/l0b0/puppet-idea'
 source       'https://github.com/l0b0/puppet-idea'
