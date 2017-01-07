@@ -6,4 +6,8 @@ RSpec::Core::RakeTask.new(:spec) do |t|
   t.pattern = 'spec/*/*_spec.rb'
 end
 
+PuppetLint.configuration.ignore_paths = [
+    'spec/**/*',
+]
+
 task :default => [:spec, :lint]
