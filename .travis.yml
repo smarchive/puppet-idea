@@ -1,10 +1,9 @@
 language: ruby
 rvm:
-  - 1.9.2
-  - 1.9.3
-before_script:
-  - 'git clone git://github.com/gini/puppet-archive.git spec/fixtures/modules/archive'
+  - 2.2.6
+  - 2.4.0
 env:
   - PUPPET_VERSION=3.0.2
   - PUPPET_VERSION=3.1.1
   - PUPPET_VERSION=3.2.1
+  - PUPPET_VERSION=4.4.0
